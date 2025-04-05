@@ -45,8 +45,8 @@ Antes de rodar o projeto, você precisa ter instalado:
 ### 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/reinaldoper/App.git
-cd App
+git clone https://github.com/reinaldoper/react-native-app.git
+cd react-native-app
 ```
 
 2. Instale as dependências:
