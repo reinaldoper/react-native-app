@@ -44,12 +44,11 @@ const page = () => {
       >
         {error && <Text style={styles.error}>{error}</Text>}
         <View style={styles.containerProfile}>
-          <Text style={styles.text}>Login Diretor</Text>
+          <Text style={styles.text}>Login Professor</Text>
           <Login
             placeholder="Email"
             value={email}
             onChangeText={(e) => setEmail(e)}
-            title="Entrar"
             onPress={handleLogin}
             color={colors.primary}
             disabled={isDisabled}

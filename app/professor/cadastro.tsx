@@ -57,10 +57,17 @@ const cadastro = () => {
     Alert.alert('Erro', error);
   }
 
+  const handleRoute = () => {
+    route.push("/diretor/page");
+  };
+
 
   return (
     <>
       <NavBar />
+      <Pressable style={styles.backStyle} onPress={handleRoute}>
+        <Ionicons name="arrow-back" size={24} color={colors.secondary} />
+      </Pressable>
       <View style={styles.container}>
         <ScrollView>
           {professores.map((item) => (

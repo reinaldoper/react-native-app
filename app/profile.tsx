@@ -51,7 +51,6 @@ const Profile = () => {
                         placeholder="Email"
                         value={email}
                         onChangeText={(e) => setEmail(e)}
-                        title="Entrar" 
                         onPress={handleLogin} 
                         color={colors.primary} 
                         disabled={isDisabled} 

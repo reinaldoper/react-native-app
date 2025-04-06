@@ -100,6 +100,47 @@ eas build -p android --profile development
 eas build -p android --profile production
 ```
 
+5. Estrutura do projeto:
+
+```bash
+react-native-app/
+├── app/
+│   ├── _layout.tsx
+│   ├── index.tsx
+│   ├── diretor/
+│   ├── student/
+│   ├── profile.tsx
+│   └── professor/
+├── assets/
+│   ├── images/
+│   └── fonts/
+│       └── OpenSans-Regular.ttf
+├── components/
+│   ├── Inputs.tsx
+│   ├── InputText.tsx
+│   ├── Logout.tsx
+│   ├── NavBar.tsx
+│   ├── ProfessorCard.tsx
+│   └── login.tsx
+├── constants/
+│   ├── colors/
+│   ├── context/
+│   ├── fecthAluno/
+│   ├── fetchDiretor/
+│   ├── fetchProfessor/
+│   ├── routes/
+│   ├── selectJson/
+│   ├── styles/
+│   └── validaEmail
+├── .env
+├── .gitignore
+├── README.md
+├── app.json
+├── package-lock.json
+├── package.json
+└── tsconfig.json
+```
+
 🔐 Autenticação:
 
 - A autenticação é feita via Context API. 

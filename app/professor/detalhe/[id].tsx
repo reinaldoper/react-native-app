@@ -56,7 +56,7 @@ const detalhe = () => {
   return (
     <>
       <NavBar />
-      <Pressable style={styles.back} onPress={handleRoute}>
+      <Pressable style={styles.backStyle} onPress={handleRoute}>
         <Ionicons name="arrow-back" size={24} color={colors.secondary} />
       </Pressable>
       <View style={styles.container}>
