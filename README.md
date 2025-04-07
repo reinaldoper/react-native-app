@@ -11,7 +11,7 @@
 
 - Abaixo um spoiler da aplicação em desenvolvimento:
 
-[App-escola](./assets/images/video_escola.gif)
+- [App-escola](./assets/images/video_escola.gif)
 
 ---
 
