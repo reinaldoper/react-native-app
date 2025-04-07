@@ -4,10 +4,14 @@
 <h1>Projeto em andamento!</h1>
 
 
-Aplicativo mobile desenvolvido com [Expo](https://expo.dev/), utilizando **Expo Router**, **Context API** para autenticação, **React Native**, e outras bibliotecas.
-O back-end desta aplicação se encontra nesse repositório abaixo:
+- Aplicativo mobile desenvolvido com [Expo](https://expo.dev/), utilizando **Expo Router**, **Context API** para autenticação, **React Native**, e outras bibliotecas.
+- O back-end desta aplicação se encontra nesse repositório abaixo:
 
 - [Repository](https://github.com/reinaldoper/back-escola-prisma)
+
+- Abaixo um spoiler da aplicação em desenvolvimento:
+
+- [App-escola](../App/assets/images/video_escola.gif)
 
 ---
 
