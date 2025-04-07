@@ -10,3 +10,8 @@ export const selects = [
   { label: "Sociologia", value: "sociologia" },
   { label: "Educação Física", value: "educacao_fisica" }
 ];
+
+export const semestre = [
+  { label: "1º Semestre", value: "1ºSemestre" },
+  { label: "2º Semestre", value: "2ºSemestre" }
+]

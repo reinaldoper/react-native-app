@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   },
   error: {
     backgroundColor: colors.error,
-    color: "#fff",
+    color: colors.notification,
     padding: 10,
     borderRadius: 5,
     marginHorizontal: 10,
@@ -73,6 +73,17 @@ const styles = StyleSheet.create({
   containerIndex: {
     flex: 1,
     padding: 10,
+  },
+  linkCadastro: {
+    color: colors.primary,
+    textDecorationLine: "underline",
+    marginTop: 10,
+    textAlign: "center",
+    fontSize: 16,
+  },
+  scrollView: {
+    width: "100%",
+    height: "100%",
   },
   containerShowProfessores: {
     backgroundColor: colors.surface,

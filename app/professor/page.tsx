@@ -55,7 +55,7 @@ const page = () => {
           />
           <Link href="/profile" style={styles.link}>
             <Ionicons name="arrow-back" size={24} color={colors.secondary} />
-            <Text style={styles.link}>Profile</Text>
+            <Text style={styles.link}>Perfil</Text>
           </Link>
         </View>
       </ImageBackground>

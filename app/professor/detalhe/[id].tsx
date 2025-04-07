@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, ActivityIndicator, Alert, Pressable } from "react-native";
+import { View, ActivityIndicator, Alert, Pressable } from "react-native";
 import { message } from "@/constants/types/typesProfessor";
 import NavBar from "@/components/NavBar";
 import styles from "@/constants/style/style";
@@ -52,7 +52,6 @@ const detalhe = () => {
     route.push("/professor/cadastro");
   };
 
-  const Id = Number(professor?.id);
   return (
     <>
       <NavBar />

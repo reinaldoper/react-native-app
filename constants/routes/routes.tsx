@@ -51,6 +51,18 @@ export default function Routes(){
             headerShown: false,
           }}
         />
+        <Stack.Screen
+          name="professor/cadastro-alunos/[id]"
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="professor/notas/[id]"
+          options={{
+            headerShown: false,
+          }}
+        />
       </Stack>
   );
 }

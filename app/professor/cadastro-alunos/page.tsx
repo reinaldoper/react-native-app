@@ -13,7 +13,7 @@ import styles from "@/constants/style/style";
 import Logout from "@/components/Logout";
 import colors from "@/constants/colors/colors";
 import { Ionicons } from "@expo/vector-icons";
-import { useRouter } from "expo-router";
+import { useRouter, Link } from "expo-router";
 import Inputs from "@/components/Inputs";
 import { FetchAluno, GetAlunos } from "@/constants/fetchAluno/fetchAluno";
 import { message } from "@/constants/types/typeAluno";
@@ -29,7 +29,7 @@ const page = () => {
   const [alunos, setAlunos] = useState<message[]>([]);
 
   const handleRoute = () => {
-    route.push("/professor/page");
+    route.push("/diretor/page");
   };
 
   const GetAlunosProfessor = useCallback(async () => {
@@ -42,8 +42,10 @@ const page = () => {
       headers,
     };
     try {
-      const { message } = await GetAlunos(options);
-      const alunosDoProfessor: message[] = message.filter((aluno: message) => aluno.professor.id === professor.id);
+      const { message } = await GetAlunos(options, 0);
+      const alunosDoProfessor: message[] = message.filter(
+        (aluno: message) => aluno.professor.id === professor.id
+      );
       setAlunos(alunosDoProfessor);
     } catch (error) {
       Alert.alert("Error", "Erro ao buscar alunos.");
@@ -56,13 +58,10 @@ const page = () => {
       route.push("/profile");
     }
   }, [professor, GetAlunosProfessor]);
-  
 
   const isValid = !nome || !email || !idade;
-  
 
   const handleRegister = async () => {
-    
     const headers = { "Content-Type": "application/json" };
     const body = JSON.stringify({
       email,
@@ -88,7 +87,7 @@ const page = () => {
         setError(error);
       }
     } catch (error) {
-        setError("Ocorreu um erro desconhecido.");
+      setError("Ocorreu um erro desconhecido.");
     }
   };
 
@@ -99,12 +98,12 @@ const page = () => {
         <Text style={styles.username}>Olá, {professor?.nome}.</Text>
       )}
       <View style={styles.cadastroAluno}>
-          <Pressable style={styles.back} onPress={handleRoute}>
-            <Ionicons name="arrow-back" size={24} color={colors.secondary} />
-          </Pressable>
-          <Pressable style={styles.back} onPress={() => setTouch(!touch)}>
-            <Ionicons name="list-outline" size={24} color={colors.secondary} />
-          </Pressable>
+        <Pressable style={styles.back} onPress={handleRoute}>
+          <Ionicons name="arrow-back" size={24} color={colors.secondary} />
+        </Pressable>
+        <Pressable style={styles.back} onPress={() => setTouch(!touch)}>
+          <Ionicons name="list-outline" size={24} color={colors.secondary} />
+        </Pressable>
       </View>
       {!touch && (
         <View style={styles.containerDefault}>
@@ -147,19 +146,27 @@ const page = () => {
               Nenhum aluno encontrado.
             </Text>
           ) : (
-            <ScrollView style={{ width: "100%", height: "100%" }}>
+            <ScrollView style={styles.scrollView}>
               {alunos.map((aluno) => (
                 <View key={aluno.id}>
-                  <Text
-                    style={styles.detailText}
-                  >
-                    👨‍🎓 {aluno.nome}
-                  </Text>
+                  <Text style={styles.detailText}>👨‍🎓 {aluno.nome}</Text>
+                  <Text style={styles.detailText}>📧 {aluno.email}</Text>
+                  <Text style={styles.detailText}>🛠️ Função: {aluno.role}</Text>
+                  <Text style={styles.detailText}>🏫 Professor: {aluno.professor.nome}</Text>
                   <Text style={styles.detailText}>
-                    📧 {aluno.email}
+                    <Link href={`/professor/notas/${aluno.id}`} style={styles.linkCadastro}>📚 Cadastrar Nota</Link>
                   </Text>
-                  <Text style={styles.detailText}>
-                    🛠️ Função: {aluno.role}
+                  <Text style={styles.username}>
+                    <Pressable>
+                      <Ionicons
+                        name="checkmark-circle-outline"
+                        size={24}
+                        color={colors.secondary}
+                        onPress={() =>
+                          route.push(`/professor/cadastro-alunos/${aluno.id}`)
+                        }
+                      />
+                    </Pressable>
                   </Text>
                   <View style={styles.divider} />
                 </View>
@@ -169,7 +176,7 @@ const page = () => {
         </View>
       )}
 
-      <Logout onPress={() => logout()} title="Sair" />
+      <Logout onPress={() => logout()} title="📴" />
     </>
   );
 };

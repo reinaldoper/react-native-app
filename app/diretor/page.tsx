@@ -84,7 +84,7 @@ const page = () => {
           disabled={isDisabled}
         />
       </View>
-      <Logout title="Logout" onPress={() => logout()} />
+      <Logout title="📴" onPress={() => logout()} />
     </>
   );
 };

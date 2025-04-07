@@ -6,12 +6,20 @@ export interface Professor {
   email: string,
 }
 
+export interface Nota {
+  id: number,
+  aluno: string,
+  alunoId: number,
+  valor: number,
+  semestre: number,
+}
+
 export interface message {
-  id: string;
+  id?: string;
   nome: string;
   role: string;
   email: string;
   professor: Professor;
-  createdAt: string;
-  notas: string;
+  createdAt?: string;
+  notas: Nota[];
 }
