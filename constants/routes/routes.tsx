@@ -63,6 +63,12 @@ export default function Routes(){
             headerShown: false,
           }}
         />
+        <Stack.Screen
+          name="student/nota/page"
+          options={{
+            headerShown: false,
+          }}
+        />
       </Stack>
   );
 }

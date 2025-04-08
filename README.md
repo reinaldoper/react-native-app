@@ -1,7 +1,7 @@
 # 📱 School App
 
 
-<h1>Projeto em andamento!</h1>
+
 
 
 - Aplicativo mobile desenvolvido com [Expo](https://expo.dev/), utilizando **Expo Router**, **Context API** para autenticação, **React Native**, e outras bibliotecas.

@@ -23,3 +23,9 @@ export interface message {
   createdAt?: string;
   notas: Nota[];
 }
+
+export interface AlunoContext {
+  aluno: message | null;
+  login: (userData: message) => void;
+  logout: () => void;
+}
