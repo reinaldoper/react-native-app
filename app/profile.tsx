@@ -41,7 +41,7 @@ const Profile = () => {
         <>
             <NavBar />
             <ImageBackground
-                source={require("../assets/images/school_.png")}
+                source={require("../assets/images/fundo.jpg")}
                 style={styles.background}
             >
                 {error && <Text style={styles.error}>{error}</Text>}

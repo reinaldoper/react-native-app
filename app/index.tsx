@@ -14,6 +14,7 @@ import { FetchDiretor } from "@/constants/fetchDiretor/fetchDiretor";
 import Inputs from "@/components/Inputs";
 
 
+
 export default function Login() {
   const route = useRouter();
 
@@ -60,7 +61,7 @@ export default function Login() {
         <Ionicons name="arrow-back" size={24} color={colors.secondary} />
       </Pressable>
       <ImageBackground
-        source={require("../assets/images/school__.png")}
+        source={require("../assets/images/ajuste.jpg")}
         style={styles.background}
       >
         <View style={styles.containerIndex}>

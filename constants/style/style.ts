@@ -9,6 +9,12 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
     paddingHorizontal: 16,
   },
+  weather:{
+    backgroundColor: colors.placeholder,
+    color: colors.primary,
+    alignItems: "center",
+    justifyContent: "center"
+  },
   label: {
     fontSize: 16,
     fontWeight: "600",
@@ -139,7 +145,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   link: {
-    color: colors.dark,
+    color: colors.lightBlue,
     textDecorationLine: "underline",
     marginTop: 10,
     textAlign: "center",

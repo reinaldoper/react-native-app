@@ -13,6 +13,12 @@
 
 - [App-escola](./assets/images/video_escola.gif)
 
+-![page_diretor](./assets/images/foto_diretor.png)
+
+-![login_diretor](./assets/images/foto_login.png)
+
+-![login_aluno](./assets/images/foto_aluno.png)
+
 ---
 
 ## 📦 Tecnologias e Dependências
