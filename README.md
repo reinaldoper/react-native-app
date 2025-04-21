@@ -16,7 +16,7 @@
 
 
 <p align="center">
- <img src='./assets/images/foto_diretor.png' alt='logo' hight='150' />
+ <img src='./assets/images/foto_diretor.png' alt='logo' height='150' />
 </p>
 
 -![login_diretor](./assets/images/foto_login.png)
