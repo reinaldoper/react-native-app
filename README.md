@@ -13,7 +13,11 @@
 
 - [App-escola](./assets/images/video_escola.gif)
 
--![page_diretor](./assets/images/foto_diretor.png)
+
+
+<p align="center">
+ <img src='./assets/images/foto_diretor.png' alt='logo' hight='150' />
+</p>
 
 -![login_diretor](./assets/images/foto_login.png)
 
