@@ -15,8 +15,8 @@
 
 ---
 
-<p align="center" gap='10px'>
- <img src='./assets/images/foto_diretor.png' alt='logo' height='250' />
+<p align="center" gap='10'>
+ <img margin-botton='10' src='./assets/images/foto_diretor.png' alt='logo' height='250' />
  <img src='./assets/images/foto_login.png' alt='logo' height='250' />
  <img src='./assets/images/foto_aluno.png' alt='logo' height='250' />
 </p>
