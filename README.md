@@ -16,8 +16,8 @@
 ---
 
 <p align="center" style="display: flex; gap: 10px;">
-  <img src="./assets/images/foto_diretor.png" alt="logo" height="250" />
-  <img src="./assets/images/foto_login.png" alt="logo" height="250" />
+  <img src="./assets/images/foto_diretor.png" alt="logo" height="250" style="margin-right: 10px;" />
+  <img src="./assets/images/foto_login.png" alt="logo" height="250" style="margin-right: 10px;" />
   <img src="./assets/images/foto_aluno.png" alt="logo" height="250" />
 </p>
 
