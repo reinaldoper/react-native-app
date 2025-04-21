@@ -13,17 +13,16 @@
 
 - [App-escola](./assets/images/video_escola.gif)
 
-
+---
 
 <p align="center">
- <img src='./assets/images/foto_diretor.png' alt='logo' height='150' />
+ <img src='./assets/images/foto_diretor.png' alt='logo' height='250' />
+ <img src='./assets/images/foto_login.png' alt='logo' height='250' />
+ <img src='./assets/images/foto_aluno.png' alt='logo' height='250' />
 </p>
 
--![login_diretor](./assets/images/foto_login.png)
-
--![login_aluno](./assets/images/foto_aluno.png)
-
 ---
+
 
 ## 📦 Tecnologias e Dependências
 
